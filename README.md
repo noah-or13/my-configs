@@ -10,6 +10,16 @@ clean, minimal hyprland dotfiles built around a coding stack on arch linux. open
 
 ---
 
+## what's included
+
+| config | description |
+|--------|-------------|
+| hyprland | window manager config with custom keybinds |
+| alacritty | terminal with tokyo night colors and 0.6 opacity |
+| starship | minimal prompt with git, python and time |
+
+---
+
 ## dependencies
 
 | package | purpose |
@@ -28,6 +38,7 @@ clean, minimal hyprland dotfiles built around a coding stack on arch linux. open
 | hyprshot | screenshots |
 | brightnessctl | brightness control |
 | pamixer | audio control |
+| starship | shell prompt |
 | ttf-jetbrains-mono-nerd | nerd font |
 | papirus-icon-theme | icon theme |
 
@@ -38,14 +49,18 @@ clean, minimal hyprland dotfiles built around a coding stack on arch linux. open
 > requires arch linux with hyprland and stow installed
 
 ```bash
-# install stow
-sudo pacman -S stow
+# install stow and starship
+sudo pacman -S stow starship
 
 # clone the repo
 git clone https://github.com/noah-or13/my-configs.git ~/dotfiles
 
 # symlink configs
 cd ~/dotfiles && stow .
+
+# add starship to your shell
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ---
@@ -107,7 +122,7 @@ cd ~/dotfiles && stow .
 
 ## license
 
-MIT — do whatever you want with it.
+Copyright (c) 2026 noah-or13 — free to use and modify for personal use, credit required, no commercial use permitted.
 
 ---
 
