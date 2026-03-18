@@ -49,8 +49,8 @@ clean, minimal hyprland dotfiles built around a coding stack on arch linux. open
 > requires arch linux with hyprland and stow installed
 
 ```bash
-# install stow and starship
-sudo pacman -S stow starship
+# install stow, starship, git and base-devel
+sudo pacman -S stow starship git base-devel
 
 # clone the repo
 git clone https://github.com/noah-or13/my-configs.git ~/dotfiles
@@ -103,6 +103,7 @@ source ~/.bashrc
 |---------|--------|
 | `SUPER + left click drag` | move window |
 | `SUPER + right click drag` | resize window |
+
 
 ### media
 
