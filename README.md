@@ -69,6 +69,7 @@ cd ~/yay-bin
 makepkg -si
 # then install AUR packages
 yay -S hyprshot librewolf-bin vesktop-bin waypaper
+```
 ---
 
 ## keybinds
