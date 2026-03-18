@@ -62,7 +62,13 @@ cd ~/dotfiles && stow .
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 source ~/.bashrc
 ```
-
+```
+# install yay with git
+git clone https://aur.archlinux.org/yay-bin.git
+cd ~/yay-bin
+makepkg -si
+# then install AUR packages
+yay -S hyprshot librewolf-bin vesktop-bin waypaper
 ---
 
 ## keybinds
